@@ -13,6 +13,11 @@ import rehypePrism from '@mapbox/rehype-prism';
 import { vercelPreset } from '@vercel/remix/vite';
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      '~': '/app'
+    }
+  },
   assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl'],
   build: {
     assetsInlineLimit: 1024,
@@ -20,6 +25,7 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  
   plugins: [
     mdx({
       rehypePlugins: [[rehypeImgSize, { dir: 'public' }], rehypeSlug, rehypePrism],
