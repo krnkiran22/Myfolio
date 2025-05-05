@@ -9,7 +9,7 @@ import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
 import sliceTexture from '~/assets/slice-app.jpg';
 import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+import portfolioproject1 from '~/assets/portfolioproject1.jpeg';
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -103,16 +103,16 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="FIRM3"
+        description=" AI-Powered Emergency Response & FIR Management Using Blockchain"
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink=""
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'FIRM3',
           textures: [
             {
-              srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
+              srcSet: `${portfolioproject1} 1280w, ${sprTextureLarge} 2560w`,
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -124,10 +124,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
+        title="Securex-ID"
+        description="An AML Based Software Which Provides A Risk Score Based On The Web3 Wallet Of The User "
         buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink=""
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -151,7 +151,7 @@ export const Home = () => {
         title="Biomedical image collaboration"
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink=""
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
