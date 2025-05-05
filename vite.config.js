@@ -18,7 +18,7 @@ export default defineConfig({
     assetsInlineLimit: 1024,
   },
   server: {
-    port: 7777,
+    port: 3000,
   },
   plugins: [
     mdx({
@@ -28,14 +28,13 @@ export default defineConfig({
     }),
     remixCloudflareDevProxy(),
     remix({
-      presets: [vercelPreset()],
       routes(defineRoutes) {
         return defineRoutes(route => {
-         
           route('/', 'routes/home/route.js', { index: true });
         });
       },
     }),
+    
     
     jsconfigPaths(),
   ],
